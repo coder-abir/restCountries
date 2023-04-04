@@ -1,0 +1,26 @@
+.country{
+    background-color: #535355;
+    border-radius: 4px;
+    padding: 0px 50px;
+    margin: 10px;
+    text-align: left;
+    border: 2px solid #646cff;
+    background-image: url('../../assets/bg.svg');
+    position: relative;
+    z-index: 100;
+}
+.country::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: #111111;
+    opacity: .5;
+    z-index: -1;
+}
+
+.country img{
+    max-width: 150px; 
+}
